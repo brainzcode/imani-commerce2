@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'accounts',
     'store',
     'djmoney',
+    'carts',
 ]
 
 MIDDLEWARE = [
