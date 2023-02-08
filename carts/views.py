@@ -21,7 +21,7 @@ def add_cart(request, product_id):
         cart = Cart.objects.create(
             cart_id = _cart_id(request)
         )
-        cart.save()
+    cart.save()
         
     try:
         cart_item = CartItem.objects.get(product=product, cart=cart)
@@ -34,8 +34,6 @@ def add_cart(request, product_id):
             cart = cart,
         )
         cart_item.save()
-    return HttpResponse(cart_item.product)
-    exit()
     return redirect('cart')
     
 
