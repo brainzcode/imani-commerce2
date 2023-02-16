@@ -28,54 +28,51 @@
               <hr />
               <div class="row">
                 <div class="item-option-select">
-                  <h6>Choose Color</h6>
-                  <select
-                    name="color"
-                    class="form-control"
-                    style="max-width: 10em"
-                  >
-                    <option value="red">Red</option>
-                    <option value="green">Green</option>
-                    <option value="blue">Blue</option>
+                  <h6>Color</h6>
+                  <select name="color" class="form-control" style="max-width: 10em" required>
+                    <option value="" disabled selected>choose color</option>
+                    {% for item in single_product.variation_set.all %}
+                    <option value="{{ item.variation_value }}">{{ item.variation_value }}</option>
+
+                    {% endfor %}
+
                   </select>
                 </div>
               </div>
               <!-- row.// -->
               <div class="row">
                 <div class="item-option-select">
-                  <h6>Select Size</h6>
-                  <select
-                    name="size"
-                    class="form-control"
-                    style="max-width: 10em"
-                  >
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
+                  <h6>Size</h6>
+                  <select name="size" class="form-control" style="max-width: 10em" required>
+                    <option value="" disabled selected>choose size</option>
+                    {% for item in single_product.variation_set.all %}
+                    <option value="{{ item.variation_value }}">{{ item.variation_value }}</option>
+
+                    {% endfor %}
+
                   </select>
                 </div>
               </div>
               <!-- row.// -->
               <hr />
-              {% if single_product.stock <= 0 %}
-              <h5 class="text-danger">Out of Stock</h5>
+              {% if single_product.stock <= 0 %} <h5 class="text-danger">Out of Stock</h5>
 
-              {% else %} {% if in_cart %}
-              <a href="" class="btn btn-success">
-                <span class="text">Added to Cart</span>
-                <i class="fas fa-check"></i>
-              </a>
-              <a href="{% url 'cart' %}" class="btn btn-outline-dark">
-                <span class="text">View Cart</span>
-                <i class="fas fa-eye"></i>
-              </a>
+                {% else %} {% if in_cart %}
+                <a href="" class="btn btn-success">
+                  <span class="text">Added to Cart</span>
+                  <i class="fas fa-check"></i>
+                </a>
+                <a href="{% url 'cart' %}" class="btn btn-outline-dark">
+                  <span class="text">View Cart</span>
+                  <i class="fas fa-eye"></i>
+                </a>
 
-              {% else %}
-              <button type="submit" class="btn btn-dark">
-                <span class="text">Add to Cart</span>
-                <i class="fas fa-shopping-cart"></i>
-              </button>
-              {% endif %} {% endif %}
+                {% else %}
+                <button type="submit" class="btn btn-dark">
+                  <span class="text">Add to Cart</span>
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                {% endif %} {% endif %}
             </article>
           </form>
 
@@ -98,10 +95,7 @@
 
         <article class="box mb-3">
           <div class="icontext w-100">
-            <img
-              src="{% static './images/avatars/avatar1.jpg' %}"
-              class="img-xs icon rounded-circle"
-            />
+            <img src="{% static './images/avatars/avatar1.jpg' %}" class="img-xs icon rounded-circle" />
             <div class="text">
               <span class="date text-muted float-md-right">24.04.2020 </span>
               <h6 class="mb-1">Mike John</h6>
