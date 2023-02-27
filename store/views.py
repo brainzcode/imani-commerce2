@@ -1,5 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
+from django.http import HttpResponse
+from django.db.models import Q
 
 
 from .models import Product
@@ -39,3 +41,12 @@ def product_detail(request, category_slug, product_slug):
         raise e
     context = {'single_product': single_product, 'in_cart': in_cart}
     return render(request, 'store/product_detail.html', context)
+
+def search(request):
+    if 'q' in request.GET:
+        query = request.GET['q']
+        if query:
+            products = Product.objects.order_by('-created_at').filter(Q(description__icontains=query) | Q(product_name__icontains=query) | Q(category__category_name__icontains=query))
+            product_count = products.count()
+    context = {'products': products, 'product_count': product_count}
+    return render(request, 'store/store.html', context)
