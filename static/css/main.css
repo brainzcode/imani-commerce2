@@ -1,4 +1,7 @@
 
+
+
+
 .carousel,
 .item,
 .active {
@@ -93,3 +96,5 @@ p{padding:10px}
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
+
+
