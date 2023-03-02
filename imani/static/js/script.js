@@ -58,3 +58,17 @@ $(document).ready(function() {
 }); 
 // jquery end
 
+// setTimeout(function(){
+//     $('#message').fadeOut('slow')
+// }, 1000);
+
+
+setTimeout(() => {
+    const message = document.getElementById('message');
+  
+    // 👇️ removes element from DOM
+    message.style.display = 'none';
+
+  }, 1000);
+
+
