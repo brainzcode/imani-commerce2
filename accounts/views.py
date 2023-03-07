@@ -12,6 +12,7 @@ from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import EmailMessage
+from django.http import HttpResponse
 
 # Create your views here.
 
@@ -73,3 +74,7 @@ def logout(request):
   auth.logout(request)
   messages.success(request, 'You are logged out')
   return redirect('login')
+
+
+def activate(request, uidb64, token):
+  return HttpResponse('Valid')

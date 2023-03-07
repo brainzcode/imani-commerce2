@@ -128,23 +128,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 
-STATIC_URL = '/static/'
-MEDIA_URL = '/images/'
+# STATIC_URL = '/static/'
 
-
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-]
-
-MEDIA_ROOT = BASE_DIR / 'static/images'
-
-
-
-# STATIC_URL = 'static/'
-# STATIC_ROOT = BASE_DIR / 'static'
 # STATICFILES_DIRS = [
-#     'imani/static',
+#     BASE_DIR / 'static',
 # ]
+
+
+
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static'
+STATICFILES_DIRS = [
+    'imani/static',
+]
 
 # Media files config
 MEDIA_URL = '/media/'
@@ -164,8 +160,8 @@ MESSAGE_TAGS = {
 
 # SMTP CONFIG
 
-EMAIL_HOST = ''
-EMAIL_PORT = ''
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'kenajunwa@gmail.com'
+EMAIL_HOST_PASSWORD = 'kpiayderpadlzcjd'
 EMAIL_USE_TLS = True
