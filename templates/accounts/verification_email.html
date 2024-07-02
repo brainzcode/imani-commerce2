@@ -1,7 +1,7 @@
 {% autoescape off %}
 
-<h3>Hi {{ user.first_name }}</h3>
-<p>Please Click on the link below to verify your registration</p>
+Hi {{ user.first_name }}
+Please Click on the link below to verify your registration
 http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
 
 if you did not solicit for this mail, please ignore.

@@ -3,7 +3,224 @@
 
 {% block content %}
 
-<!-- ========================= SECTION PAGETOP ========================= -->
+
+<div class="hero-inner text-center">
+    <div class="container-full w-container">
+        <h1>Shop</h1>
+        {% for category in links %}
+        <div class="w-dyn-list">
+
+            <div role="list" class="categories-list w-dyn-items">
+
+                <div role="listitem" class="w-dyn-item"><a href="{{ category.get_url }}" class="category-link w-inline-block">
+                        <div>{{ category.category_name }}</div>
+                    </a>
+                </div>
+
+
+                <!-- <div role="listitem" class="w-dyn-item"><a href="category/men" class="category-link w-inline-block">
+                <div>Men</div>
+                </a>
+            </div>
+          <div role="listitem" class="w-dyn-item"><a href="category/kids" class="category-link w-inline-block">
+              <div>Kids</div>
+            </a></div>
+          <div role="listitem" class="w-dyn-item"><a href="category/skis" class="category-link w-inline-block">
+              <div>Skis</div>
+            </a></div>
+          <div role="listitem" class="w-dyn-item"><a href="category/snow-boards" class="category-link w-inline-block">
+              <div>Snow Boards</div>
+            </a></div>
+          <div role="listitem" class="w-dyn-item"><a href="category/ski-boots" class="category-link w-inline-block">
+              <div>Ski Boots</div>
+            </a></div>
+          <div role="listitem" class="w-dyn-item"><a href="category/apparel" class="category-link w-inline-block">
+              <div>Apparel</div>
+            </a></div>
+          <div role="listitem" class="w-dyn-item"><a href="category/snow-shoes" class="category-link w-inline-block">
+              <div>Snow Shoes</div>
+            </a></div>
+          <div role="listitem" class="w-dyn-item"><a href="category/ski-goggles" class="category-link w-inline-block">
+              <div>Ski Goggles</div>
+            </a></div>
+          <div role="listitem" class="w-dyn-item"><a href="category/helmets" class="category-link w-inline-block">
+              <div>Helmets</div>
+            </a></div> -->
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="shop-section section-spacing">
+    <div class="container-full w-container">
+        <div class="w-dyn-list">
+            <div role="list" class="grid-category-product w-dyn-items">
+                <div role="listitem" class="w-dyn-item"><a data-w-id="4d34e370-fda8-cb65-5e8e-47b54d2e1ed7" href="product/full-mountain-ski-kits" class="product-item w-inline-block">
+                        <div class="product-image-wrap"><img data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D" loading="eager"
+                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                src="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/63819563bfe74773a66ed763_product-all.jpg" alt="" sizes="(max-width: 767px) 88vw, (max-width: 991px) 43vw, (max-width: 1279px) 29vw, 24vw"
+                                srcset="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/63819563bfe74773a66ed763_product-all-p-500.jpg 500w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/63819563bfe74773a66ed763_product-all-p-800.jpg 800w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/63819563bfe74773a66ed763_product-all.jpg 900w"
+                                class="product-image" />
+                            <div style="opacity:0;display:none" class="product-hover-border"></div>
+                        </div>
+                        <div class="grid-product-title-info">
+                            <h6 class="product-title">Full Mountain Ski kits</h6>
+                            <div id="w-node-_4d34e370-fda8-cb65-5e8e-47b54d2e1edd-8086b861" class="price-item-wrap">
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price">$ 1,805.00 USD</div>
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price-compare w-dyn-bind-empty"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <!-- <div role="listitem" class="w-dyn-item"><a data-w-id="4d34e370-fda8-cb65-5e8e-47b54d2e1ed7" href="product/shifty-snowboard-boots" class="product-item w-inline-block">
+                        <div class="product-image-wrap"><img data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D" loading="eager"
+                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                src="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381981e8ae82d8008463c7f_product-01.jpg" alt="" sizes="(max-width: 767px) 88vw, (max-width: 991px) 43vw, (max-width: 1279px) 29vw, 24vw"
+                                srcset="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381981e8ae82d8008463c7f_product-01-p-500.jpg 500w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381981e8ae82d8008463c7f_product-01-p-800.jpg 800w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381981e8ae82d8008463c7f_product-01.jpg 900w"
+                                class="product-image" />
+                            <div style="opacity:0;display:none" class="product-hover-border"></div>
+                        </div>
+                        <div class="grid-product-title-info">
+                            <h6 class="product-title">Shifty Snowboard Boots</h6>
+                            <div id="w-node-_4d34e370-fda8-cb65-5e8e-47b54d2e1edd-8086b861" class="price-item-wrap">
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price">$ 129.00 USD</div>
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price-compare w-dyn-bind-empty"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div role="listitem" class="w-dyn-item"><a data-w-id="4d34e370-fda8-cb65-5e8e-47b54d2e1ed7" href="product/hemises-outdoor-jacket" class="product-item w-inline-block">
+                        <div class="product-image-wrap"><img data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D" loading="eager"
+                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                src="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381982699a006c51c83f53d_product-02.jpg" alt="" sizes="(max-width: 767px) 88vw, (max-width: 991px) 43vw, (max-width: 1279px) 29vw, 24vw"
+                                srcset="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381982699a006c51c83f53d_product-02-p-500.jpg 500w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381982699a006c51c83f53d_product-02-p-800.jpg 800w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381982699a006c51c83f53d_product-02.jpg 900w"
+                                class="product-image" />
+                            <div style="opacity:0;display:none" class="product-hover-border"></div>
+                        </div>
+                        <div class="grid-product-title-info">
+                            <h6 class="product-title">Hemises Outdoor Jacket</h6>
+                            <div id="w-node-_4d34e370-fda8-cb65-5e8e-47b54d2e1edd-8086b861" class="price-item-wrap">
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price">$ 105.00 USD</div>
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price-compare">$ 180.00 USD</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div role="listitem" class="w-dyn-item"><a data-w-id="4d34e370-fda8-cb65-5e8e-47b54d2e1ed7" href="product/salamen-a56-ski-board" class="product-item w-inline-block">
+                        <div class="product-image-wrap"><img data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D" loading="eager"
+                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                src="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381984a41973c1e56564457_product-03.jpg" alt="" sizes="(max-width: 767px) 88vw, (max-width: 991px) 43vw, (max-width: 1279px) 29vw, 24vw"
+                                srcset="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381984a41973c1e56564457_product-03-p-500.jpg 500w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381984a41973c1e56564457_product-03-p-800.jpg 800w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381984a41973c1e56564457_product-03.jpg 900w"
+                                class="product-image" />
+                            <div style="opacity:0;display:none" class="product-hover-border"></div>
+                        </div>
+                        <div class="grid-product-title-info">
+                            <h6 class="product-title">Salamen A56 Ski Board</h6>
+                            <div id="w-node-_4d34e370-fda8-cb65-5e8e-47b54d2e1edd-8086b861" class="price-item-wrap">
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price">$ 296.00 USD</div>
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price-compare w-dyn-bind-empty"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div role="listitem" class="w-dyn-item"><a data-w-id="4d34e370-fda8-cb65-5e8e-47b54d2e1ed7" href="product/spy-getaway-goggles-for-men" class="product-item w-inline-block">
+                        <div class="product-image-wrap"><img data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D" loading="eager"
+                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                src="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/638198549f6b4721aee3f19e_product-04.jpg" alt="" sizes="(max-width: 767px) 88vw, (max-width: 991px) 43vw, (max-width: 1279px) 29vw, 24vw"
+                                srcset="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/638198549f6b4721aee3f19e_product-04-p-500.jpg 500w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/638198549f6b4721aee3f19e_product-04-p-800.jpg 800w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/638198549f6b4721aee3f19e_product-04.jpg 900w"
+                                class="product-image" />
+                            <div style="opacity:0;display:none" class="product-hover-border"></div>
+                        </div>
+                        <div class="grid-product-title-info">
+                            <h6 class="product-title">Spy Getaway Goggles For Men</h6>
+                            <div id="w-node-_4d34e370-fda8-cb65-5e8e-47b54d2e1edd-8086b861" class="price-item-wrap">
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price">$ 45.00 USD</div>
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price-compare w-dyn-bind-empty"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div role="listitem" class="w-dyn-item"><a data-w-id="4d34e370-fda8-cb65-5e8e-47b54d2e1ed7" href="product/snow-helmet-womens" class="product-item w-inline-block">
+                        <div class="product-image-wrap"><img data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D" loading="eager"
+                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                src="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381985b5ab155627529120e_product-05.jpg" alt="" sizes="(max-width: 767px) 88vw, (max-width: 991px) 43vw, (max-width: 1279px) 29vw, 24vw"
+                                srcset="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381985b5ab155627529120e_product-05-p-500.jpg 500w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381985b5ab155627529120e_product-05-p-800.jpg 800w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381985b5ab155627529120e_product-05.jpg 900w"
+                                class="product-image" />
+                            <div style="opacity:0;display:none" class="product-hover-border"></div>
+                        </div>
+                        <div class="grid-product-title-info">
+                            <h6 class="product-title">Snow Helmet Womens</h6>
+                            <div id="w-node-_4d34e370-fda8-cb65-5e8e-47b54d2e1edd-8086b861" class="price-item-wrap">
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price">$ 82.00 USD</div>
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price-compare w-dyn-bind-empty"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div role="listitem" class="w-dyn-item"><a data-w-id="4d34e370-fda8-cb65-5e8e-47b54d2e1ed7" href="product/amt-carbon-sq-ski-poles" class="product-item w-inline-block">
+                        <div class="product-image-wrap"><img data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D" loading="eager"
+                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                src="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381986538bb0d163fcb13c8_product-06.jpg" alt="" sizes="(max-width: 767px) 88vw, (max-width: 991px) 43vw, (max-width: 1279px) 29vw, 24vw"
+                                srcset="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381986538bb0d163fcb13c8_product-06-p-500.jpg 500w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381986538bb0d163fcb13c8_product-06-p-800.jpg 800w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381986538bb0d163fcb13c8_product-06.jpg 900w"
+                                class="product-image" />
+                            <div style="opacity:0;display:none" class="product-hover-border"></div>
+                        </div>
+                        <div class="grid-product-title-info">
+                            <h6 class="product-title">AMT Carbon SQ Ski Poles</h6>
+                            <div id="w-node-_4d34e370-fda8-cb65-5e8e-47b54d2e1edd-8086b861" class="price-item-wrap">
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price">$ 50.00 USD</div>
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price-compare w-dyn-bind-empty"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div role="listitem" class="w-dyn-item"><a data-w-id="4d34e370-fda8-cb65-5e8e-47b54d2e1ed7" href="product/seeley-3l-jacket-mens" class="product-item w-inline-block">
+                        <div class="product-image-wrap"><img data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D" loading="eager"
+                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                src="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381987038bb0d7a75cb13d2_product-07.jpg" alt="" sizes="(max-width: 767px) 88vw, (max-width: 991px) 43vw, (max-width: 1279px) 29vw, 24vw"
+                                srcset="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381987038bb0d7a75cb13d2_product-07-p-500.jpg 500w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381987038bb0d7a75cb13d2_product-07-p-800.jpg 800w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/6381987038bb0d7a75cb13d2_product-07.jpg 900w"
+                                class="product-image" />
+                            <div style="opacity:0;display:none" class="product-hover-border"></div>
+                        </div>
+                        <div class="grid-product-title-info">
+                            <h6 class="product-title">Seeley 3L Jacket Mens</h6>
+                            <div id="w-node-_4d34e370-fda8-cb65-5e8e-47b54d2e1edd-8086b861" class="price-item-wrap">
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price">$ 250.00 USD</div>
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price-compare">$ 300.00 USD</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div role="listitem" class="w-dyn-item"><a data-w-id="4d34e370-fda8-cb65-5e8e-47b54d2e1ed7" href="product/two-corp-mittens-kids" class="product-item w-inline-block">
+                        <div class="product-image-wrap"><img data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D" loading="eager"
+                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                src="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/63819877f875b1b7dc53684d_product-08.jpg" alt="" sizes="(max-width: 767px) 88vw, (max-width: 991px) 43vw, (max-width: 1279px) 29vw, 24vw"
+                                srcset="https://assets-global.website-files.com/637dc139a321ea5e4d68082b/63819877f875b1b7dc53684d_product-08-p-500.jpg 500w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/63819877f875b1b7dc53684d_product-08-p-800.jpg 800w, https://assets-global.website-files.com/637dc139a321ea5e4d68082b/63819877f875b1b7dc53684d_product-08.jpg 900w"
+                                class="product-image" />
+                            <div style="opacity:0;display:none" class="product-hover-border"></div>
+                        </div>
+                        <div class="grid-product-title-info">
+                            <h6 class="product-title">Two Corp Mittens Kids</h6>
+                            <div id="w-node-_4d34e370-fda8-cb65-5e8e-47b54d2e1edd-8086b861" class="price-item-wrap">
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price">$ 45.00 USD</div>
+                                <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="price-compare w-dyn-bind-empty"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <section class="section-pagetop bg">
     <div class="container">
         {% if 'search' in request.path %}
@@ -12,11 +229,11 @@
         <h2 class="title-page">Our Store</h2>
         {% endif %}
 
-    </div> <!-- container //  -->
+    </div>
 </section>
-<!-- ========================= SECTION INTRO END// ========================= -->
 
-<!-- ========================= SECTION CONTENT ========================= -->
+
+
 <section class="section-content padding-y">
     <div class="container">
 
@@ -135,9 +352,9 @@
                 <div class="row">
                     {% if products %}
 
-                        {% for product in products %}
+                    {% for product in products %}
 
-                    
+
 
                     <div class="col-md-4">
                         <figure class="card card-product-grid">
@@ -157,7 +374,7 @@
                                     </div> <!-- price-wrap.// -->
                                 </div>
                                 <a href="{{ product.get_url }}" class="btn btn-block btn-dark">View Details </a>
-                                
+
                             </figcaption>
                         </figure>
                     </div> <!-- col.// -->
@@ -179,17 +396,17 @@
                         {% endif %}
 
                         {% for item in products.paginator.page_range %}
-                            {% if products.number == item %}
-                                <li class="page-item active"><a class="page-link" href="#">{{ item }}</a></li>
-                            {% else %}
-                                <li class="page-item"><a class="page-link" href="?page={{ item }}">{{ item }}</a></li>
-                            {% endif %}
-                        {% endfor %}
-                        
-                        {% if products.has_next %}
-                            <li class="page-item"><a class="page-link" href="?page={{ products.next_page_number }}">Next</a></li>
+                        {% if products.number == item %}
+                        <li class="page-item active"><a class="page-link" href="#">{{ item }}</a></li>
                         {% else %}
-                            <li class="page-item"><a class="page-link disabled" href="#">Next</a></li>
+                        <li class="page-item"><a class="page-link" href="?page={{ item }}">{{ item }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+
+                        {% if products.has_next %}
+                        <li class="page-item"><a class="page-link" href="?page={{ products.next_page_number }}">Next</a></li>
+                        {% else %}
+                        <li class="page-item"><a class="page-link disabled" href="#">Next</a></li>
                         {% endif %}
                     </ul>
                     {% endif %}
